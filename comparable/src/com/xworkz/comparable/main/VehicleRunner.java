@@ -31,15 +31,15 @@ public class VehicleRunner {
 //        System.out.println(vehicle);
 
 
-       Iterator<VehicleDTO> iterator = vehicle.iterator();
-       while (iterator.hasNext()) {
-           //  System.out.println(iterator.next());
-           VehicleDTO vehicleDTO = iterator.next();
-           if (vehicleDTO.getId().equals(5)) {
-               iterator.remove();
-               System.out.println(vehicle);
-           }
-       }
+//       Iterator<VehicleDTO> iterator = vehicle.iterator();
+//       while (iterator.hasNext()) {
+//           //  System.out.println(iterator.next());
+//           VehicleDTO vehicleDTO = iterator.next();
+//           if (vehicleDTO.getId().equals(5)) {
+//               iterator.remove();
+//               System.out.println(vehicle);
+//           }
+//       }
 
 
 

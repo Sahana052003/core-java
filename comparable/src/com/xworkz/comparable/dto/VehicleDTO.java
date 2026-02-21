@@ -21,7 +21,7 @@ public class VehicleDTO implements Comparable<VehicleDTO> {
 //       // return vehicleDTO.id.compareTo(this.id);
 ////        return this.number.compareTo(vehicleDTO.number);
 //
-////        return this.vehicleName.compareTo(vehicleDTO.vehicleName);
-        return vehicleDTO.vehicleName.compareTo(this.vehicleName);
+        return this.vehicleName.compareTo(vehicleDTO.vehicleName);
+       // return vehicleDTO.vehicleName.compareTo(this.vehicleName);
     }
 }
