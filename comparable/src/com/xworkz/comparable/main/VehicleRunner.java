@@ -7,13 +7,14 @@ import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
 
+
 public class VehicleRunner {
     public static void main(String[] args) {
         List<VehicleDTO> vehicle=new ArrayList<>();
 
 
 
-        vehicle.add(new VehicleDTO(3,"Suzuki",7682787278L));
+        vehicle.add(new VehicleDTO(9,"Suzuki",7682787278L));
         vehicle.add(new VehicleDTO(67,"Toyoto",78987923L));
         vehicle.add(new VehicleDTO(16,"Hyundai",76897324L));
         vehicle.add(new VehicleDTO(5,"kw",5638909789L));
@@ -42,9 +43,12 @@ public class VehicleRunner {
 //       }
 
 
-
-
         Collections.sort(vehicle);
         System.out.println(vehicle);
+        System.out.println("-=====================================");
+
+        for(VehicleDTO vehicle1:vehicle)
+            System.out.println(vehicle1);
+
     }
 }
