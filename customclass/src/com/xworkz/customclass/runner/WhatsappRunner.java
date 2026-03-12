@@ -9,6 +9,12 @@ import java.util.List;
 public class WhatsappRunner {
     public static void main(String[] args) {
         List<WhatsappDTO> list=new ArrayList<>();
+        try{
+
+
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
 
         list.add(new WhatsappDTO(2,"Nandushree",6745391264L,true,23.243D));
         list.add(new WhatsappDTO(1,"Prabhas",8935210472L,false,5678D));
