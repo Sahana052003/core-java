@@ -1,18 +1,19 @@
 package com.xworkz.collection.main;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public class Game {
     public static void main(String[] args) {
-        List<Integer> list=new ArrayList<>();
+        List<Integer> list=new LinkedList<>();
         list.add(39);
         list.add(1);
-        list.add(67);
-        list.add(567);
-        list.add(2345);
-        list.add(12345);
-        List<Integer> list1=new ArrayList<>(list);
+//        list.add(67);
+//        list.add(567);
+//        list.add(2345);
+//        list.add(12345);
+        List<Integer> list1=new LinkedList<>(list);
         System.out.println(list1);
         System.out.println("-----------------------");
 
