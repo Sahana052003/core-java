@@ -14,5 +14,6 @@ public class Main {
       list.add(1);
       list.add(null);
         System.out.println(list);
+
     }
 }

@@ -14,6 +14,7 @@ public class MainRunner {
         System.out.println(map);
         for (String name:map.keySet()){
             System.out.println(name + ":" + map.get(name));
+
         }
     }
 }
