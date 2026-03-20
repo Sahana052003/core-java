@@ -18,6 +18,7 @@ public class Main {
         System.out.println( stack.peek());
         System.out.println(stack.isEmpty());
         System.out.println(stack.size());
+        stack.push(null);
 
         while (!stack.isEmpty()){
             System.out.println(stack.pop());
