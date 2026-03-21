@@ -9,11 +9,11 @@ public class Game {
         List<Integer> list=new LinkedList<>();
         list.add(39);
         list.add(1);
-      //  list.add(67);
-//        list.add(567);
-//        list.add(2345);
-//        list.add(12345);
-        List<Integer> list1=new LinkedList<>(list);
+        list.add(67);
+        list.add(567);
+        list.add(2345);
+        list.add(12345);
+        List<Integer> list1=new ArrayList<>(list);
         System.out.println(list1);
         System.out.println("-----------------------");
 

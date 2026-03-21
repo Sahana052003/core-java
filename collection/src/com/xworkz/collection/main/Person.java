@@ -23,7 +23,7 @@ public class Person {
 //
 //        }
 
-        List list=new ArrayList<>();
+        List<Integer> list=new ArrayList<>();
         list.add(56);
         list.add(345);
         list.add(4567);
@@ -33,6 +33,11 @@ public class Person {
         Collections.sort(list);
         Collections.sort(list,Collections.reverseOrder());
 //        Collections.shuffle(list);
+        System.out.println(list);
+        System.out.println("=========================");
+
+
+        Collections.sort(list,(a,b)->a-b);
         System.out.println(list);
     }
 }
