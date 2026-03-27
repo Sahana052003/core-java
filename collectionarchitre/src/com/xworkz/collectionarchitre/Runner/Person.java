@@ -1,5 +1,7 @@
 package com.xworkz.collectionarchitre.Runner;
 
+import java.util.Objects;
+
 public class Person implements Comparable<Person>{
     private Integer id;
     private String name;
@@ -18,6 +20,18 @@ public class Person implements Comparable<Person>{
         this.id = id;
         this.name = name;
         this.age = age;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        Person person = (Person) o;
+        return Objects.equals(id, person.id) && Objects.equals(name, person.name) && Objects.equals(age, person.age);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(id, name, age);
     }
 
     @Override

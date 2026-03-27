@@ -10,10 +10,11 @@ public class Main {
         Person person=new Person(56,"Diya",23);
         Person person1=new Person(76,"Ram",30);
         Person person2=new Person(12,"Kavya",22);
-        list.add(person);
-        list.add(person1);
-        list.add(person2);
-        System.out.println(list);
+//        list.add(person);
+//        list.add(person1);
+//        list.add(person2);
+//        list.add(person);
+//        System.out.println(list);
 
 
         TreeSet treeSet=new TreeSet<>();
@@ -21,5 +22,8 @@ public class Main {
         treeSet.add(person1);
         treeSet.add(person2);
         System.out.println(treeSet);
+
+
+
     }
 }
