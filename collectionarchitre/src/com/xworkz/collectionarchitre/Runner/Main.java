@@ -23,7 +23,5 @@ public class Main {
         treeSet.add(person2);
         System.out.println(treeSet);
 
-
-
     }
 }
