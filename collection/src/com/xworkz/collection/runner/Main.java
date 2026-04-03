@@ -1,9 +1,6 @@
 package com.xworkz.collection.runner;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -78,5 +75,25 @@ public class Main {
             }
             System.out.println(list1);
         }
+
+
+        Collections.sort(list1);
+        System.out.println(list1);
+
+        Collections.sort(list1,Collections.reverseOrder());
+        System.out.println(list1);
+
+        Collections.reverse(list1);
+        System.out.println(list1);
+
+        System.out.println(Collections.max(list1));
+        System.out.println(Collections.min(list1));
+
+
+        List<Character> vowels=Arrays.asList('a','e','i','o','u');
+        System.out.println(vowels);
+
+
+
     }
 }
