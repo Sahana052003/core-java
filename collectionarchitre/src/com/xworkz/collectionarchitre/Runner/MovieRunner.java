@@ -12,13 +12,13 @@ public class MovieRunner {
         Movie movie3=new Movie(5,"Rebel",150D);
         Movie movie4=new Movie(72,"24",300D);
         Movie movie5 = new Movie(45,"RRR",450D);
-        TreeSet treeSet=new TreeSet<>();
-        treeSet.add(movie);
-        treeSet.add(movie1);
-        treeSet.add(movie2);
-        treeSet.add(movie3);
-        treeSet.add(movie4);
-        System.out.println(treeSet);
+//        TreeSet treeSet=new TreeSet<>();
+//        treeSet.add(movie);
+//        treeSet.add(movie1);
+//        treeSet.add(movie2);
+//        treeSet.add(movie3);
+//        treeSet.add(movie4);
+//        System.out.println(treeSet);
 
 
         Set<Movie> set = new HashSet<>();

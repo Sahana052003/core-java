@@ -2,6 +2,8 @@ package com.xworkz.collection.runner;
 
 import java.util.*;
 
+import static javax.swing.UIManager.get;
+
 public class Main {
     public static void main(String[] args) {
         List<Integer> list=new ArrayList<>();
@@ -90,10 +92,30 @@ public class Main {
         System.out.println(Collections.min(list1));
 
 
-        List<Character> vowels=Arrays.asList('a','e','i','o','u');
-        System.out.println(vowels);
+//        List<Character> vowels=Arrays.asList('a','e','i','o','u');
+//        System.out.println(vowels);
+//
+////        List<Character> vowels1=List.of('a','e','i','o','u');
+//
+//
+//        Integer[] arr=list1.toArray(list1.toArray(new Integer[0]));
+//        System.out.println(Arrays.toString(arr));
+//
+//        List<Integer> list2=new ArrayList<>(Arrays.asList(1,2,3,4));
+//        System.out.println(list2);
+//        list2.add(234);
+//        System.out.println(list2);
 
 
 
+
+
+
+        //the reference is collection-group of objects,so it can't get a single element(where it doen't have get()) ,but the actual object is ArrayList through this i can get a single object
+        Collection<Integer> collection=new ArrayList<>();
+        collection.add(5678);
+        collection.add(45678);
+        System.out.println(collection);
+        System.out.println(((ArrayList<Integer>) collection).get(1));//typecast it
     }
 }
