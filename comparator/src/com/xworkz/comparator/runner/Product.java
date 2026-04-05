@@ -1,4 +1,4 @@
-package com.xworkz.comparator;
+package com.xworkz.comparator.runner;
 
 public class Product implements Comparable<Product>{
     private Integer id;

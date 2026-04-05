@@ -1,4 +1,4 @@
-package com.xworkz.comparator;
+package com.xworkz.comparator.runner;
 
 import java.util.Comparator;
 
