@@ -107,7 +107,8 @@ public class Main {
 //        System.out.println(list2);
 
 
-
+        Collections.shuffle(list1);
+        System.out.println("Shuffle the list " + list1);
 
 
 
@@ -117,5 +118,8 @@ public class Main {
         collection.add(45678);
         System.out.println(collection);
         System.out.println(((ArrayList<Integer>) collection).get(1));//typecast it
+
+        Collections.shuffle((List<Integer>) collection);
+        System.out.println("" + collection);
     }
 }
