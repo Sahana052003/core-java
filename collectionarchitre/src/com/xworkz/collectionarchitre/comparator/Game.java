@@ -38,6 +38,7 @@ public class Game {
         System.out.println(map.keySet());
         System.out.println(map.values());
         System.out.println(map.get("Telugu Titans"));
+        System.out.println(map.size());
 
     }
 }
