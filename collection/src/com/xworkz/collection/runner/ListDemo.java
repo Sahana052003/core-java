@@ -4,7 +4,7 @@ import java.util.*;
 
 import static javax.swing.UIManager.get;
 
-public class Main {
+public class ListDemo {
     public static void main(String[] args) {
         List<Integer> list=new ArrayList<>();
         list.add(4567);
