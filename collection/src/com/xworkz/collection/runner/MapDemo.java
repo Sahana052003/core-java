@@ -80,5 +80,73 @@ public class MapDemo {
         // 19. clear()
         map.clear();
         System.out.println("After clear: " + map);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // 🔹 1. Sort keys using Collections
+        List<String> keys = new ArrayList<>(map.keySet());
+        Collections.sort(keys);
+        System.out.println("Sorted Keys: " + keys);
+
+        // 🔹 2. Sort values using Collections
+        List<Integer> values = new ArrayList<>(map.values());
+        Collections.sort(values);
+        System.out.println("Sorted Values: " + values);
+
+        // 🔹 3. Sort Map by Keys
+        List<Map.Entry<String, Integer>> entryList =
+                new ArrayList<>(map.entrySet());
+
+        Collections.sort(entryList,
+                (e1, e2) -> e1.getKey().compareTo(e2.getKey()));
+
+        System.out.println("Sorted by Keys:");
+        for (Map.Entry<String, Integer> e : entryList) {
+            System.out.println(e.getKey() + " -> " + e.getValue());
+        }
+
+        // 🔹 4. Sort Map by Values
+        Collections.sort(entryList,
+                (e1, e2) -> e1.getValue().compareTo(e2.getValue()));
+
+        System.out.println("Sorted by Values:");
+        for (Map.Entry<String, Integer> e : entryList) {
+            System.out.println(e.getKey() + " -> " + e.getValue());
+        }
+
+        // 🔹 5. Reverse list
+        Collections.reverse(keys);
+        System.out.println("Reversed Keys: " + keys);
+
+        // 🔹 6. Max / Min
+        System.out.println("Max Value: " + Collections.max(values));
+        System.out.println("Min Value: " + Collections.min(values));
+
+        // 🔹 7. Frequency
+        values.add(10);
+        System.out.println("Frequency of 10: " +
+                Collections.frequency(values, 10));
+
+        // 🔹 8. Shuffle
+        Collections.shuffle(keys);
+        System.out.println("Shuffled Keys: " + keys);
     }
+
 }
