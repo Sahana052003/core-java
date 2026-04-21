@@ -50,5 +50,17 @@ public class CollectionDemo {
 
         Collections.sort(list2);
         System.out.println(list2);
+
+
+
+                List<String> list3=new LinkedList<>();
+        list3.add("Apple");
+        list3.add("Banana");
+        list3.add("Mango");
+        list3.add("Grapes");
+        list3.add("Orange");
+        list3.add("Pineapple");
+        System.out.println("List is : " + list3);
+
     }
 }
