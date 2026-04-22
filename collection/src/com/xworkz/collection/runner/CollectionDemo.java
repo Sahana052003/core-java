@@ -53,7 +53,7 @@ public class CollectionDemo {
 
 
 
-                List<String> list3=new LinkedList<>();
+        List<String> list3=new LinkedList<>();
         list3.add("Apple");
         list3.add("Banana");
         list3.add("Mango");
@@ -62,5 +62,31 @@ public class CollectionDemo {
         list3.add("Pineapple");
         System.out.println("List is : " + list3);
 
+
+        for (String s:list3){
+            System.out.println(s);
+        }
+
+        for (int i=0;i< list3.size();i++){
+            System.out.println("traveser loop : " + list3.get(i));
+        }
+
+        Iterator<String> iterator = list3.iterator();
+        while (iterator.hasNext()){
+            System.out.println(iterator.next());
+        }
+
+        System.out.println("========================");
+        ListIterator<String> li = list3.listIterator();
+
+// Forward
+        while (li.hasNext()) {
+            System.out.println(li.next());
+        }
+
+// Backward
+        while (li.hasPrevious()) {
+            System.out.println(li.previous());
+        }
     }
 }
