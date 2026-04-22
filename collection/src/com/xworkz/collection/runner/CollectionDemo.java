@@ -72,9 +72,17 @@ public class CollectionDemo {
         }
 
         Iterator<String> iterator = list3.iterator();
-        while (iterator.hasNext()){
-            System.out.println(iterator.next());
+        while (iterator.hasNext()) {
+            String item = iterator.next();
+            System.out.println(item);
+
+            // check if element contains "a"
+            if (item.toLowerCase().contains("e")) {
+                iterator.remove();
+            }
         }
+
+        System.out.println("After removal: " + list3);
 
         System.out.println("========================");
         ListIterator<String> li = list3.listIterator();
