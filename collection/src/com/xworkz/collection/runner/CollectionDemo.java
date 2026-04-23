@@ -96,5 +96,65 @@ public class CollectionDemo {
         while (li.hasPrevious()) {
             System.out.println(li.previous());
         }
+
+
+        System.out.println("sdfgds=====================");
+        List<Integer> list9=new ArrayList<>();
+        list9.add(273);
+        Iterator<Integer> iterator1 = list9.iterator();
+        while (iterator1.hasNext())
+        System.out.println(iterator1.next());
+
+
+
+
+
+
+
+        //ListIterator
+        System.out.println("LISTITERATOR");
+        ListIterator<String> iterator2 = list3.listIterator();
+        while (iterator2.hasNext()){
+            System.out.println(iterator2.next());
+            System.out.println(iterator2.nextIndex());
+            System.out.println(iterator2.previousIndex());
+        }
+
+        System.out.println("BACKEND TRAVESR");
+     while (iterator2.hasPrevious()){
+         System.out.println(iterator2.previous());
+         System.out.println(iterator2.nextIndex());
+         System.out.println(iterator2.previousIndex());
+     }
+        System.out.println("ADD elements");
+     while (iterator2.hasNext()){
+         String next = iterator2.next();
+         if (next=="Banana"){
+             iterator2.add("APPLE");
+         }
+     }
+        System.out.println(list3);
+
+
+        iterator2 = list3.listIterator();
+        System.out.println("SET the elemts in list");
+        while (iterator2.hasNext()){
+            String s = iterator2.next();
+            if(s.equals("Banana")){
+                iterator2.set("Pineapple");
+            }
+        }
+        System.out.println(list3);
+
+
+        iterator2 = list3.listIterator();
+        System.out.println("REMOVE the elements in the list");
+        while (iterator2.hasNext()){
+            String next = iterator2.next();
+            if (next.equals("APPLE")){
+                iterator2.remove();
+            }
+        }
+        System.out.println(list3);
     }
 }
