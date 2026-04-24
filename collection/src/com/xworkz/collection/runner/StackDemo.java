@@ -46,9 +46,7 @@ public class StackDemo {
         stack.remove(1);
         System.out.println("After remove index 1: " + stack);
 
-        // 11. clone()
-        Stack<Integer> clonedStack = (Stack<Integer>) stack.clone();
-        System.out.println("Cloned Stack: " + clonedStack);
+
 
         // 12. clear()
         stack.clear();
