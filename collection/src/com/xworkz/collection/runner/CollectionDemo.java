@@ -156,5 +156,27 @@ public class CollectionDemo {
             }
         }
         System.out.println(list3);
+
+//
+//        for (Integer integer:list){
+//           if (integer==234)
+//            System.out.println(list.remove(integer));
+//        }
+
+
+        System.out.println("STACK --------");
+        Stack<Integer> vector=new Stack<>();
+        vector.add(2345);
+        vector.push(5678);
+        vector.push(2345);
+        vector.push(2345);
+        vector.push(null);
+        vector.push(null);
+        System.out.println(vector);
+        System.out.println("Remove the element from the stack : " + vector.pop());
+        System.out.println(vector);
+        System.out.println("Returns the element without removing it : " + vector.peek());
+        System.out.println("check if the stack have elements are not : " + vector.isEmpty() );
+        System.out.println("Returns the position of element based on index : " + vector.search(5678));
     }
 }
