@@ -2,7 +2,7 @@ package com.xworkz.collection.runner;
 
 import java.util.*;
 
-public class CollectionDemo {
+public class CollectionDemo extends Object {
     public static void main(String[] args) {
         List<Integer> list=new LinkedList<>();
         list.add(234);
@@ -178,5 +178,36 @@ public class CollectionDemo {
         System.out.println("Returns the element without removing it : " + vector.peek());
         System.out.println("check if the stack have elements are not : " + vector.isEmpty() );
         System.out.println("Returns the position of element based on index : " + vector.search(5678));
+
+
+        System.out.println("SET INTERFACE");
+        Set<Integer> set=new HashSet<>();
+        set.add(34);
+        set.add(34);
+        set.add(345);
+        set.add(3);
+        set.add(null);
+        set.add(null);
+        set.add(-7);
+        set.add(null);
+        System.out.println(set);
+
+
+        System.out.println("Traverse the collection ");
+        for (Integer i:set)
+            System.out.println(i);
+
+
+        System.out.println("Using ITEATOR to traversal");
+        Iterator<Integer> iterator3 = set.iterator();
+        while (iterator3.hasNext()) {
+            Integer next = iterator3.next();
+            System.out.println(next);
+        }
+
+
+
+
+
     }
 }
