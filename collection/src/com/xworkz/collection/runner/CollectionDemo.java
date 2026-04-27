@@ -207,10 +207,37 @@ public class CollectionDemo extends Object {
 
 
         System.out.println("MAP -------------------------------");
-        
+        Map<String,Integer> map=new HashMap<>();
+        map.put("Sora",4839);
+        map.put("Kiran",563);
+        map.put("Ram",546);
+        map.put("seeta",2);
+        map.put("Kiran",5687);
+        System.out.println(map);
+
+        System.out.println("TO access the element : " + map.get("Kiran"));
+        System.out.println("TO get all KEYS : " + map.keySet());
+        System.out.println("To get all Values : " + map.values());
+
+        for (String key : map.keySet()) {
+            System.out.println(key + " : "  + map.get(key));
+        }
+
+        System.out.println("USing emtrySet : " + map.entrySet());
+        for (Map.Entry<String,Integer> map1:map.entrySet()){
+            System.out.println("Keys are : " + map1.getKey() + " AND  Values are : " + map1.getValue());
+        }
+
+        System.out.println("Using getOrDefault : " + map.getOrDefault("Sora",1));
+        System.out.println(map.getOrDefault("Sneha" ,0));
 
 
+        Map<Character,Integer> map1=new HashMap<>();
 
-
+        String name="abcdajkdsaa";
+       for (char ch: name.toCharArray()){
+           map1.put(ch,map1.getOrDefault(ch,0)+1);
+       }
+        System.out.println(map1);
     }
 }
