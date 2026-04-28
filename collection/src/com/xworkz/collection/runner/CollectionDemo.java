@@ -239,5 +239,16 @@ public class CollectionDemo extends Object {
            map1.put(ch,map1.getOrDefault(ch,0)+1);
        }
         System.out.println(map1);
+
+
+
+        System.out.println("MAP -------------------------------");
+        Map<String,Integer> map2= new TreeMap<>();
+        map2.put("Sora",4839);
+        map2.put("Kiran",563);
+        map2.put("Ram",546);
+        map2.put("seeta",2);
+        map2.put("Kiran",5687);
+        System.out.println(map2);
     }
 }
