@@ -2,6 +2,9 @@ package com.xworkz.collection.runner;
 
 import java.util.*;
 
+import static javafx.scene.input.KeyCode.K;
+import static javafx.scene.input.KeyCode.V;
+
 public class CollectionDemo extends Object {
     public static void main(String[] args) {
         List<Integer> list=new LinkedList<>();
@@ -227,6 +230,9 @@ public class CollectionDemo extends Object {
         for (Map.Entry<String,Integer> map1:map.entrySet()){
             System.out.println("Keys are : " + map1.getKey() + " AND  Values are : " + map1.getValue());
         }
+
+        System.out.println("Traverse");
+        map.forEach((K,V)->System.out.println("Keys are : " + K + " And Vaues are : " + V));
 
         System.out.println("Using getOrDefault : " + map.getOrDefault("Sora",1));
         System.out.println(map.getOrDefault("Sneha" ,0));
