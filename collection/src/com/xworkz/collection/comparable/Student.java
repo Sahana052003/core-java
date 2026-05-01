@@ -3,7 +3,7 @@ package com.xworkz.collection.comparable;
 import java.util.Objects;
 
 public class Student implements Comparable<Student>{
-    private Integer id;
+    private int id;
     private String name;
     private Character code;
 
@@ -61,6 +61,8 @@ public class Student implements Comparable<Student>{
 
     @Override
     public int compareTo(Student o) {
-        return this.name.compareTo(o.name);
+        //return this.name.compareTo(o.name);
+        //return this.id-o.id;
+        return this.code.compareTo(o.code);
     }
 }
