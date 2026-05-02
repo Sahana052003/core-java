@@ -256,5 +256,22 @@ public class CollectionDemo extends Object {
         map2.put("seeta",2);
         map2.put("Kiran",5687);
         System.out.println(map2);
+
+
+
+
+
+
+
+
+
+        List<Integer> list4=Arrays.asList(23,4532,1234,-2,0,23);
+        System.out.println(list4);
+        Collections.sort(list4);
+        for (Integer integer:list4) {
+            System.out.println("Sorted list is : " + integer);
+        }
+
+        System.out.println("This list has elemets that need to search : " + list4.contains(23));
     }
 }
